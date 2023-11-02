@@ -1,14 +1,3 @@
-const playerSelection = prompt("What's your play?").toLowerCase();
-
-// const checkInput = (playerSelection) => {
-//     if (playerSelection === 'rock' || playerSelection === 'paper' || playerSelection === 'scissors') {
-//         return playerSelection;
-//     } else {
-//       console.log('Invalid input. Try again.');
-//     }
-// }
-
-
 const getComputerChoice = () => {
   const choice = Math.floor(Math.random() * 3);
   if (choice === 0) {
@@ -35,15 +24,13 @@ const playRound = (playerSelection, computerSelection) => {
 };
 
 const game = () => {
-//   const playerSelection = "scissors";
-  const computerSelection = getComputerChoice();
-  console.log(playerSelection);
-  console.log(computerSelection);
-  console.log(playRound(playerSelection, computerSelection));
+  for (let gameRound = 0; gameRound < 5; gameRound++) {
+    const playerSelection = prompt("What's your play?").toLowerCase();
+    const computerSelection = getComputerChoice();
+    console.log(playerSelection);
+    console.log(computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
+  }
 };
 
 console.log(game());
-
-// const playerSelection = "scissors";
-// const computerSelection = getComputerChoice();
-// console.log(playRound(playerSelection, computerSelection));
