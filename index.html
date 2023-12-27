@@ -4,10 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1><span class="rock">Rock,</span> <span class="paper">Paper</span> & <span class="scissors">Scissors</span></h1>
 
-    
+    <div class="wrapper">
+
+        <h2>Pick your play:</h2>
+
+        <div class="options">
+            <img class="option-img" id="rock" src="images/rock2.png" alt="Rock image">
+            <img class="option-img" id="paper" src="images/paper2.png" alt="Paper image">
+            <img class="option-img" id="scissors" src="images/scissors2.png" alt="scissors image">
+        </div>
+
+        <h2>Pick your play:</h2>
+        <div class="round">
+            <h2>Computer: <span id="computerChoice"></span></h2>
+            <h2>You: <span id="userChoice"></span></h2>
+            <h2>result: <span id="result"></span></h2>
+        </div>
+
+
+        <div class="round">
+            <div id="userImage"></div>
+            <div id="computerImage"></div>
+        </div>
+
+
+        <!-- <h2>Pick your play:</h2>
+        <div class="options">
+            <img class="option-img" id="rock-onclick-btn" src="images/rock2.png" alt="Rock image">
+            <img class="option-img" id="paper-onclick-btn" src="images/paper2.png" alt="Paper image">
+            <img class="option-img" id="scissors-onclick-btn" src="images/scissors2.png" alt="scissors image">
+        </div>
+
+        <h2>Rock, paper, scissors, shoot...</h2>
+        
+        <div class="round">
+            <div>
+                <img class="round-img" id="my-image"  src="images/rock2.png" alt="Paper image">
+                <p class="player">you</p>
+            </div>
+            <p class="versus">V.S</p>
+            <div>
+                <img class="round-img" src="images/scissors2.png" alt="scissors image">
+                <p  class="player">computer</p>
+            </div>
+        </div> -->
+
+    </div>
+
     <script src="./script.js"></script>
+
 </body>
 </html>
